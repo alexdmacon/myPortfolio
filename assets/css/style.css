@@ -186,6 +186,12 @@ nav ul li:hover {
     justify-content: space-between;
 }
 
-
-
+@media screen and (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+    .my-work-featured, .contact-info {
+        margin-top: 20px;
+    }
+}
 /* E5FCC2   9DE0AD   45ADA8   547980   594F4F */ 
