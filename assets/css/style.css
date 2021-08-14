@@ -1,4 +1,8 @@
 /* https://css-tricks.com/box-sizing/ */
+
+/* Color scheme E5FCC2   9DE0AD   45ADA8   547980   594F4F */ 
+
+
 html {
     box-sizing: border-box;
 }
@@ -6,15 +10,18 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-
 :root {
     --spacing: 30px;
+    --lightest-green: #E5FCC2;
+    --light-green: #9DE0AD;
+    --dark-green: #45ADA8;
+    --very-dark-green: #547980;
 }
 
 * {
-   font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
-
+/* Flexbox styling can be repeated for sections on page */
 .container {
     display: flex;
     max-width: 1200px;
@@ -22,6 +29,7 @@ html {
     padding: var(--spacing);
 }
 
+/* Creates consistent styling for section titles on left side of page */
 .left-area {
     flex: 0 0 30%;
     padding-right: var(--spacing);
@@ -29,7 +37,7 @@ html {
     flex-direction: column;
     align-items: center;
 }
-
+/* Section titles */
 .section-header {
     border:black;
     border-width:2px;
@@ -44,7 +52,7 @@ html {
 header {
     display: flex;
     width: 100%;
-    background: #E5FCC2;
+    background: var(--lightest-green);
     margin: 0 auto;
     justify-content: space-between;
 }
@@ -75,16 +83,16 @@ nav ul li {
     padding:10px;
     font-family: 'Oswald', sans-serif;
 }
-
+/* Keeps links from turning purple after click*/
 a {
     color: inherit;
 }
 
 nav ul li:hover {
-    background: #547980;
+    background: var(--very-dark-green);
     color: white;
 }
-
+/*Hero image styling*/
 .hero {
     display: flex;
     background-image: url("../images/computer.jpg");
@@ -106,11 +114,11 @@ nav ul li:hover {
     border-width:5px;
     border-style: solid;
     padding: 10px;
-    background-color: #9DE0AD;
+    background-color: var(--light-green);
 }
 
 .about-me {
-    background: #9DE0AD;
+    background: var(--light-green);
 }
 
 .about-me .section-header {
@@ -126,7 +134,7 @@ nav ul li:hover {
 
 
 .my-work {
-    background: #45ADA8;
+    background: var(--dark-green);
 }
 
 .my-work .article-container {
@@ -141,7 +149,7 @@ nav ul li:hover {
     padding: 5px;
     width: 200px;
     height: 150px;
-    color: #E5FCC2;
+    color: var(--lightest-green);
     font-weight: bold;
     font-size: 2em;
     margin-right: 15px;
@@ -158,7 +166,7 @@ nav ul li:hover {
     height: 200px;
     flex-grow: 1;
     flex-basis: 300px;
-    color: #E5FCC2;
+    color: var(--lightest-green);
     font-weight: bold;
     font-size: 45px;
     margin-right: 15px;
@@ -169,16 +177,13 @@ nav ul li:hover {
     text-align: center;
 }
 
-.my-work-item:hover {
-    box-shadow:  3px 3px 8px #E5FCC2;
+.my-work-item:hover, .my-work-featured:hover {
+    box-shadow:  3px 3px 8px var(--lightest-green);
 }
 
-.my-work-featured:hover {
-    box-shadow: 3px 3px 8px #E5FCC2;
-}
 
 .contact {
-    background: #E5FCC2;
+    background: var(--lightest-green);
 }
 
 .contact-container {
@@ -186,12 +191,16 @@ nav ul li:hover {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 600px) {
-    .container {
+/* Switches "About Me" section to column for readability on phones and adds space between h2s and content */
+@media screen and (max-width: 650px) {
+    .container, header {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .my-work-featured, .contact-info {
         margin-top: 20px;
+        align-items: center;
+        justify-content: center;
     }
 }
-/* E5FCC2   9DE0AD   45ADA8   547980   594F4F */ 
