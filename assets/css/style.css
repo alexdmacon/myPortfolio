@@ -83,15 +83,17 @@ nav ul li {
     padding:10px;
     font-family: 'Oswald', sans-serif;
 }
-/* Keeps links from turning purple after click*/
-a {
-    color: inherit;
-}
 
 nav ul li:hover {
     background: var(--very-dark-green);
     color: white;
 }
+
+/* Keeps links from turning purple after click*/
+a {
+    color: inherit;
+}
+
 /*Hero image styling*/
 .hero {
     display: flex;
@@ -143,6 +145,7 @@ nav ul li:hover {
     list-style: none;
 }
 
+/* Styling for individual project items, will need to edit and possibly add new classes as I create more original projects */
 .my-work-item {
     background-size:cover;
     background-image: url(https://www.lynbrooklibrary.org/wp-content/uploads/2020/06/coming-soon-neon-sign.jpg);
@@ -177,10 +180,10 @@ nav ul li:hover {
     text-align: center;
 }
 
+/*Adds green shading when cursor over projects*/
 .my-work-item:hover, .my-work-featured:hover {
     box-shadow:  3px 3px 8px var(--lightest-green);
 }
-
 
 .contact {
     background: var(--lightest-green);
@@ -191,7 +194,7 @@ nav ul li:hover {
     justify-content: space-between;
 }
 
-/* Switches "About Me" section to column for readability on phones and adds space between h2s and content */
+/* For readability on phones, switches to columns and adds space between parent titles and children */
 @media screen and (max-width: 650px) {
     .container, header {
         flex-direction: column;
