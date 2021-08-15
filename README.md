@@ -21,6 +21,8 @@ Download the files and then view the code.
 The page is best viewed on desktop. It is also optimized for phones and other devices whose screens show a max width of 650px.
 
 ## Credits
+- My wife (and coding tutor) Christina Rees provided invaluable edits and suggestions.
+- The image of the Canon Cat computer is via Jim Abeles on Flickr and is shared here under a Creative Commons license https://www.flickr.com/photos/abeles/20926281553
 - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - https://developer.mozilla.org/en-US/docs/Web
 - https://geddski.teachable.com/p/flexbox-zombies
@@ -31,5 +33,3 @@ The page is best viewed on desktop. It is also optimized for phones and other de
 - https://www.ostraining.com/blog/webdesign/css-flexbox-basic-concepts/
 - https://blog.uxfol.io/product-designer-portfolio-examples/
 - https://digitalsynopsis.com/design/minimal-web-color-palettes-combination-hex-code/
-- My wife and tutor (https://github.com/xtinarees) provided invaluable edits and suggestions.
-- The image of the Canon Cat computer is via Jim Abeles on Flickr and is shared here under a Creative Commons license https://www.flickr.com/photos/abeles/20926281553
