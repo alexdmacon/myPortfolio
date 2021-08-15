@@ -55,6 +55,7 @@ header {
     background: var(--lightest-green);
     margin: 0 auto;
     justify-content: space-between;
+    padding: 20px;
 }
 
 h1 {
@@ -199,7 +200,7 @@ a {
 
 /* For readability on phones, switches to columns and adds space between parent titles and children */
 @media screen and (max-width: 650px) {
-    .container, header {
+    .container, .article-container, header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
