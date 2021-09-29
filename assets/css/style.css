@@ -10,6 +10,7 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+
 :root {
     --spacing: 30px;
     --lightest-green: #E5FCC2;
@@ -85,10 +86,13 @@ nav ul li {
     font-family: 'Oswald', sans-serif;
 }
 
-nav ul li:hover {
+nav ul li:hover,
+.contact-container ul li:hover
+ {
     background: var(--very-dark-green);
     color: white;
 }
+
 
 /* Keeps links from turning purple after click*/
 a {
@@ -151,31 +155,55 @@ a {
 }
 
 /* Styling for individual project items, will need to edit and possibly add new classes as I create more original projects */
-.my-work-item {
-    background: var(--very-dark-green);
+.my-work-item-2 {
+    background-size:cover;
+    background-image: url(../images/weather-dashboard.png);
     padding: 5px;
-    width: 200px;
+    width:200px;
     height: 150px;
-    color: var(--lightest-green);
+    flex-grow: 1;
+    flex-basis: 300px;
+    color: var(--very-dark-green);
     font-weight: bold;
-    font-size: 2em;
+    font-size: 20px;
     margin-right: 15px;
     margin-bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.my-work-item-3 {
+    background-size:cover;
+    background-image: url(../images/work-day-scheduler.png);
+    padding: 5px;
+    width:200px;
+    height: 150px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    color: var(--very-dark-green);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .my-work-featured {
     background-size:cover;
-    background-image: url(../images/horiseon1.png);
+    background-image: url(../images/taskmp4.png);
     padding: 5px;
-    height: 200px;
+    width:400px;
+    height: 250px;
     flex-grow: 1;
     flex-basis: 300px;
-    color: var(--lightest-green);
+    color: var(--very-dark-green);
     font-weight: bold;
-    font-size: 45px;
+    font-size: 30px;
     margin-right: 15px;
     margin-bottom: 15px;
     display: flex;
@@ -185,7 +213,7 @@ a {
 }
 
 /*Adds green shading when cursor over projects*/
-.my-work-item:hover, .my-work-featured:hover {
+.my-work-item-2:hover, .my-work-item-3:hover, .my-work-featured:hover {
     box-shadow:  3px 3px 8px var(--lightest-green);
 }
 
@@ -195,8 +223,38 @@ a {
 
 .contact-container {
     align-items: center;
-    justify-content: space-between;
 }
+
+.contact-container ul {
+    list-style-type: none;
+}
+
+.my-work-text {
+    display: inline-flex;
+    font-weight:bolder;
+    margin-right: 25px;
+    margin-top: 10px;
+    border:black;
+    border-width:2px;
+    border-style: solid;
+    padding:10px;
+    font-family: 'Oswald', sans-serif;
+    background: var(--lightest-green)
+}
+
+.contact-container ul li {
+    display: inline-flex;
+    font-weight:bolder;
+    margin-right: 25px;
+    margin-top: 10px;
+    border:black;
+    border-width:2px;
+    border-style: solid;
+    padding:10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
 
 /* For readability on phones, switches to columns and adds space between parent titles and children */
 @media screen and (max-width: 650px) {
