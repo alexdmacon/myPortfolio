@@ -93,6 +93,20 @@ nav ul li:hover,
     color: white;
 }
 
+p ul {
+    list-style-type: circle;
+}
+
+.tech-list {
+    color: var(--very-dark-green);
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.tech-list:hover {
+    color: white;
+}
 
 /* Keeps links from turning purple after click*/
 a {
@@ -212,8 +226,27 @@ a {
     text-align: center;
 }
 
+.my-work-featured-1 {
+    background-size:cover;
+    background-image: url(../images/exquisite.png);
+    padding: 5px;
+    width:400px;
+    height: 250px;
+    flex-grow: 1;
+    flex-basis: 300px;
+    color: var(--very-dark-green);
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 /*Adds green shading when cursor over projects*/
-.my-work-item-2:hover, .my-work-item-3:hover, .my-work-featured:hover {
+.my-work-item-2:hover, .my-work-item-3:hover {
     box-shadow:  3px 3px 8px var(--lightest-green);
 }
 
@@ -242,6 +275,20 @@ a {
     background: var(--lightest-green)
 }
 
+.my-work-text-1 {
+    display: inline-flex;
+    font-weight:bolder;
+    margin-right: 25px;
+    margin-top: 10px;
+    border:black;
+    border-width:2px;
+    border-style: solid;
+    padding:10px;
+    font-family: 'Oswald', sans-serif;
+    background: var(--dark-green);
+    font-size: 30px;
+}
+
 .contact-container ul li {
     display: inline-flex;
     font-weight:bolder;
@@ -254,7 +301,35 @@ a {
     font-family: 'Oswald', sans-serif;
 }
 
+.my-work-descr {
+    display: inline-flex;
+    font-weight:bolder;
+    margin-right: 25px;
+    margin-top: 10px;
+    padding:10px;
+    font-family: 'Oswald', sans-serif;
+}
 
+
+
+.my-work ul li {
+    display: inline-flex;
+    font-weight:bolder;
+    margin-right: 25px;
+    margin-top: 10px;
+    border:black;
+    border-width:2px;
+    border-style: solid;
+    padding:10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.my-work ul li:hover,
+.contact-container ul li:hover
+ {
+    background: var(--very-dark-green);
+    color: white;
+}
 
 /* For readability on phones, switches to columns and adds space between parent titles and children */
 @media screen and (max-width: 650px) {
