@@ -285,7 +285,8 @@ a {
     border-style: solid;
     padding:10px;
     font-family: 'Oswald', sans-serif;
-    background: var(--dark-green);
+    color: var(--lightest-green);
+    background: var(--very-dark-green);
     font-size: 30px;
 }
 
